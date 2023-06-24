@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace webdefault\FilamentWebdefault;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
-class SkeletonServiceProvider extends PluginServiceProvider
+class FilamentWebdefaultServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'skeleton';
+    public static string $name = 'filament-webdefault';
 
     protected array $resources = [
         // CustomResource::class,
@@ -22,15 +22,15 @@ class SkeletonServiceProvider extends PluginServiceProvider
     ];
 
     protected array $styles = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.css',
+        'plugin-filament-webdefault' => __DIR__.'/../resources/dist/filament-webdefault.css',
     ];
 
     protected array $scripts = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.js',
+        'plugin-filament-webdefault' => __DIR__.'/../resources/dist/filament-webdefault.js',
     ];
 
     // protected array $beforeCoreScripts = [
-    //     'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.js',
+    //     'plugin-filament-webdefault' => __DIR__ . '/../resources/dist/filament-webdefault.js',
     // ];
 
     public function configurePackage(Package $package): void
